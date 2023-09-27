@@ -13,6 +13,13 @@ public class Questions {
 	@Id
 	@GeneratedValue
 	private int id;
+
+	@Override
+	public String toString() {
+		return "Questions [id=" + id + ", name=" + name + ", Rid=" + Rid + ", course=" + course + ", email=" + email
+				+ ", address=" + address + "]";
+	}
+
 	private String name;
 	private int Rid;
 	private String course;
